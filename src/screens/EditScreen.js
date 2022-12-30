@@ -19,7 +19,7 @@ const EditScreen = ({ navigation }) => {
       <Button
         title="Edit post"
         onPress={() =>
-          editBlogPost(postId, title, content, () => {
+          editBlogPost(blogPost.id, title, content, () => {
             navigation.pop();
           })
         }
